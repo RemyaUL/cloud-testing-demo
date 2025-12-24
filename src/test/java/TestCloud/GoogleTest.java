@@ -32,7 +32,8 @@ public class GoogleTest {
 
         driver.get("https://www.google.com");   // FIXED URL
 
-        WebElement logo = driver.findElement(By.cssSelector("svg[class='lnXdpd']"));
+        WebElement logo = driver.findElement(By.cssSelector("img[alt='Google']")
+);
 
         Assert.assertTrue(logo.isDisplayed(), "Google logo is not displayed");
 
