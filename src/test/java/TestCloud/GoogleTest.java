@@ -16,7 +16,7 @@ public class GoogleTest {
         ChromeOptions options = new ChromeOptions();
 
         // Tell Selenium where Chromium is installed
-        options.setBinary("/usr/bin/chromium-browser");
+       // options.setBinary("/usr/bin/chromium-browser");
 
         // Recommended for Linux / CI
         options.addArguments("--headless");
@@ -24,7 +24,7 @@ public class GoogleTest {
         options.addArguments("--disable-dev-shm-usage");
 
         // Set ChromeDriver path (important on Ubuntu)
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
         WebDriver driver = new ChromeDriver(options);
 
