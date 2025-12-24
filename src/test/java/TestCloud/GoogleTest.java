@@ -27,6 +27,8 @@ public class GoogleTest {
         //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
         WebDriver driver = new ChromeDriver(options);
+          driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("https://www.google.com");   // FIXED URL
 
